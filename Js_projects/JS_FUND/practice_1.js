@@ -26,25 +26,29 @@ button.addEventListener("click",function(){
 
 
 
-// check EVEN or ODD
+// Dynamic Greeter 
 
-const  myInput = document.getElementById("formInput");
-const  button = document.getElementById("myButton");
-const  result = document.getElementById('result');
+// const input = document.querySelector(#formInput);
+// const button = document.querySelector(#myButton);
+// const resultp = document.querySelector(#result);
 
-button.addEventListener("click", (){
-const inputVal = myInput.value;
- 
+ const input = document.getElementById("formInput");
+ const mibutton = document.getElementById("myrButton");
+ const resultp = document.getElementById("result");
 
-if (inputVal === ''){
-    result.textContent = "please enter the number first..." ;
-    return ;
+function nameGreeting(name){
+    const nameTrim = name.trim();
+    return nameTrim ?  `Hello, ${nameTrim}!` : "please enter a  valid name."
 
-} 
+}
 
+mibutton.addEventListener('click', () => {
 
+    resultp.textContent = nameGreeting(input.value);
 
 });
+
+
 
 
 
