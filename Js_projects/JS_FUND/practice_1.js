@@ -49,6 +49,21 @@ mibutton.addEventListener('click', () => {
 });
 
 
+// Counter Typer
+const text = document.getElementById("mytextarea");
+const  textOutput= document.getElementById("mioutput");
+
+text.addEventListener('input', function(){
+
+    const textCounter = text.value.length;
+   
+    textOutput.textContent = "CHARACTERS :" + textCounter;
+
+
+});
+
+
+
 
 
 
