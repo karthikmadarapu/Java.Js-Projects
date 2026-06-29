@@ -63,6 +63,36 @@ text.addEventListener('input', function(){
 });
 
 
+{
+ const inputElement = document.getElementById("myinput");
+ const mebutton = document.getElementById("numberButton");
+ const feedback = document.getElementById("resultFeedback"); 
+
+ const targetNum = Math.floor(Math.random()*10) + 1;
+
+ mebutton.addEventListener('click', ()=>{
+    const userGuess = parseInt(inputElement.value, 10);
+
+    if(isNaN(userGuess)|| userGuess < 1 || userGuess >10 ){
+        feedback.textContent = "Please enter a number between 1 - 10.";
+        return;
+    }
+
+    if(userGuess === targetNum){
+        feedback.textContent = "🎉 Correct!";
+    }
+    else if(userGuess < targetNum) {
+       
+        feedback.textContent = "Too low! Try Again."
+    }
+    else{
+        feedback.textContent = "Too High! Try Again."
+    }
+      
+ });
+ 
+}
+
 
 
 
