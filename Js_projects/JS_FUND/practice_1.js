@@ -26,5 +26,30 @@ button.addEventListener("click",function(){
 
 
 
+// check EVEN or ODD
+
+const  myInput = document.getElementById("formInput");
+const  button = document.getElementById("myButton");
+const  result = document.getElementById('result');
+
+button.addEventListener("click", (){
+const inputVal = myInput.value;
+ 
+
+if (inputVal === ''){
+    result.textContent = "please enter the number first..." ;
+    return ;
+
+} 
+
+
+
+});
+
+
+
+
+
+
 
 
