@@ -90,9 +90,41 @@ text.addEventListener('input', function(){
     }
       
  });
- 
+
 }
 
+// LIST MULTIPLIER!
+{
+    const listInput = document.getElementById("numberInput");
+    const inputButton = document.getElementById("generatebtn");
+    const legitList = document.getElementById("itemList");
+
+    inputButton.addEventListener('click',()=>{
+
+        const count = parseInt(listInput.value,10);
+   
+        if(isNaN(count)|| count < 1 ){
+            alert("Please enter a number greater than 0");
+               return; 
+        }
+
+        legitList.innerHTML ="";
+        
+        for(let i= 1; i <=count; i++){
+            const newItem = document.createElement("li");
+            newItem.textContent = `Item #${i}`;
+
+            legitList.appendChild(newItem);
+
+        }
+        
+        
+    });
+
+
+
+
+}
 
 
 
