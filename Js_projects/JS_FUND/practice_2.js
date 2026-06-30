@@ -25,7 +25,7 @@
     });
 
 
-    
+
 
 
 
@@ -64,4 +64,45 @@
 
 
     });
+
+
+    // DYNAMIC TODO LIST
+
+    const inputTodo  = document.getElementById("inputTodo");
+    const incBtn = document.getElementById("todoBtn");
+    const resultStat = document.getElementById("resultLi");
+
+   incBtn.addEventListener('click', ()=>{
+    
+    const usertxt = inputTodo.value.trim();
+    
+    
+    if(usertxt === ""){
+        alert("please enter the value first.")
+        return;
+    }
+
+    const li = document.createElement("li");
    
+    li.innerHTML = `
+        <span> ${usertxt} </span>
+        <button class= "delete-btn"> Delete </button> 
+    `;
+    resultStat.appendChild(li);
+
+    inputTodo.value = " ";
+    inputTodo.focus();
+
+
+   });
+
+   resultStat.addEventListener('click', (event) =>{
+
+    if(event.target.classList.contains("delete-btn")){
+        const listItemToDelete = event.target.parentElement;
+
+        listItemToDelete.remove();
+    }
+
+   });
+
