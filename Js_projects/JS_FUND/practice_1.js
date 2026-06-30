@@ -126,6 +126,38 @@ text.addEventListener('input', function(){
 
 }
 
+    const stringInput = document.getElementById("vowinp");
+    const vowbtn = document.getElementById("vowbtn");
+    const resultMsg = document.getElementById("countmsg");
+    
+
+    function vowelCounter(text){
+        let count = 0;
+        const lowerText = text.toLowerCase();
+        const vowels = "aeiou"
+
+        for(let char of lowerText){
+            if(vowels.includes(char)){
+                count++ ;
+            }
+        }
+        return count;
+    }
+
+    vowbtn.addEventListener('click', () =>{
+        
+        const userText = stringInput.value;
+        const vowfunc = vowelCounter(userText);
+
+        resultMsg.textContent =`COUNT: ${vowfunc}`;
+
+
+
+
+    });
+
+
+
 
 
 
