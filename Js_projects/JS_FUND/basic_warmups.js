@@ -25,4 +25,15 @@
      console.log(calcRectangle(7, 8));
 
 
-    //  Minute to 
+    //  Minute to Seconds generator
+    
+    function toSeconds(min){
+        
+        const tosec = min * 60;
+        
+        return `${tosec} Seconds.`;
+
+
+    }
+
+    console.log(toSeconds(15));
