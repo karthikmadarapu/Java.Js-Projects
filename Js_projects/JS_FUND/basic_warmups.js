@@ -44,11 +44,23 @@
 
     function findTheAvg(num1, num2, num3){
 
-        const formula = (num1 + num2 + num3) / 3 ;
+        const result = (num1 + num2 + num3) / 3 ;
 
-        return `The ans is : ${formula}`;
+        return `The ans is : ${result}`;
     }
 
     console.log(findTheAvg(10, 20, 30));
 
-    
+
+    // BasketBall team total generator 
+
+    function teamTotal(twoPointer, threePointer){
+        const twoR = twoPointer * 2;
+        const threeP = threePointer * 3;
+        const totalResult = twoR + threeP;
+
+        return `Your Team  total is: ${totalResult}`;
+
+    }
+
+    console.log(teamTotal(10, 7));
