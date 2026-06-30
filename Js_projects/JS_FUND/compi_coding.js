@@ -17,14 +17,3 @@ for(let i=1; i<=100;i++){
 
 
 
-
-//    CURRENCY CONVERTER
-
-    function currencyConverter(amount, exchangeRate){
-     
-        return amount * exchangeRate;
-       
-
-    }
-
-    console.log(currencyConverter(10000, 65.48));
