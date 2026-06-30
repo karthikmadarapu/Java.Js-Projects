@@ -37,3 +37,18 @@
     }
 
     console.log(toSeconds(15));
+
+    // Find the average of three values
+
+    // Average formula = sum of values/number of total values
+
+    function findTheAvg(num1, num2, num3){
+
+        const formula = (num1 + num2 + num3) / 3 ;
+
+        return `The ans is : ${formula}`;
+    }
+
+    console.log(findTheAvg(10, 20, 30));
+
+    
