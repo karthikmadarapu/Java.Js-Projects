@@ -64,3 +64,31 @@
     }
 
     console.log(teamTotal(10, 7));
+
+
+    // CONDITIONAL PROBLEMS
+     function getTicketPrice(age, isStudent){
+
+
+        if(age <=12 || age >= 65){
+            
+            if(isStudent){
+                return ` YOUR TICKET PRICE IS : $7 ONLY`;
+            }
+
+             return ` YOUR TICKET PRICE IS : $10 ONLY`;
+
+        }
+
+      if(age > 12 && age < 65){
+        if(isStudent){
+            return ` YOUR TICKET PRICE IS : $12 ONLY`;
+
+        }
+            return ` YOUR TICKET PRICE IS : $15 ONLY`;
+
+      }
+
+     }
+
+    console.log(getTicketPrice(77, false ));
