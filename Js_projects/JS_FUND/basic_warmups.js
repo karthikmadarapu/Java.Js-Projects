@@ -135,3 +135,27 @@
 
 
     console.log(speedLimitChecker(99));
+
+    // Rock paper scissors shoot 
+
+    function playRound(player1, player2){
+        if(player1 === player2){
+            return `oh it's a tie`;
+        }
+
+       else if(
+            (player1 === "rock" && player2 === "scissors") ||
+            (player1 === "paper" && player2 === "rock") ||
+            (player1 === "scissors" && player2 === "paper")){
+           
+            return  `${player1} wins ezzz`;
+       }
+        else {
+            return  `${player2}wins....`;
+        }
+
+    }
+    
+    console.log(playRound("rock", "scissors"));
+    console.log(playRound("rock", "rock"));
+
