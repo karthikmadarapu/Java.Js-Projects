@@ -92,3 +92,30 @@
      }
 
     console.log(getTicketPrice(77, false ));
+
+    // basic 3 param function with conditional statements
+
+    function   basiCalc(num1, num2, operator){
+        switch (operator) {
+            case '+' :
+                return num1 + num2;
+            case '-' :
+                return num1 - num2;
+            case '*' :
+                return num1 * num2;
+            case '/' :
+                if(num2 === 0){
+                    return `Division by zero is not allowed.`;
+                }
+                return num1 / num2;
+                default: 
+                  return `Invalid operator. Please use +, -, *, or /.`;
+                }
+
+    }
+
+
+
+      console.log(basiCalc(10, 5, '+'));
+      console.log(basiCalc(10, 80, '*'));
+      
