@@ -118,4 +118,20 @@
 
       console.log(basiCalc(10, 5, '+'));
       console.log(basiCalc(10, 80, '*'));
-      
+
+    //   speed limit checker 
+
+    function speedLimitChecker(speed){
+        if(speed <= 60 ){
+            return `YOU ARE SAFE "LEGAL SPEED" ${speed}`;
+        }
+        else if(speed >= 61 && speed <= 80 ){
+            return `WARNING! WARNING! WARNING! ${speed}`;
+        }
+        else{
+            return `YOU ARE COOKED MF ${speed}`;
+        }
+    }
+
+
+    console.log(speedLimitChecker(99));
