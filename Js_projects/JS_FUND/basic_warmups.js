@@ -159,3 +159,20 @@
     console.log(playRound("rock", "scissors"));
     console.log(playRound("rock", "rock"));
 
+
+
+
+     let  arr = {};
+    function pushTheEven(nums){
+
+        for (const i= 0; i<= nums.length; i++){
+     
+            if(i % 2 === 0){
+                arr.push();
+            }
+
+        }
+        return `these are all the even nums ${arr}`;
+    }
+
+    console.log(1,2,3,4,5,5,);
