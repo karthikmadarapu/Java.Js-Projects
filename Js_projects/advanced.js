@@ -22,3 +22,23 @@ const createBankAcc = (initialAmount) =>{
 const  myAcc = createBankAcc(2000);
 console.log(myAcc.deposit(500));
 console.log(myAcc.balance);
+
+
+
+
+
+
+// logger for errors
+
+const createLogger = (environment) =>{
+    return (message) =>{
+      const  timeStamp = new Date().toISOString();
+      
+      return `[${environment.toUpperCase()}] ${timeStamp} ${message}`
+    
+    };
+};
+
+const logProductionError = createLogger("production");
+
+console.log(logProductionError("Database Connection Failed!!!"));
