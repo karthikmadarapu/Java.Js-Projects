@@ -30,8 +30,7 @@
     function toSeconds(min){
         
         const tosec = min * 60;
-        
-        return `${tosec} Seconds.`;
+         return `${tosec} Seconds.`;
 
 
     }
@@ -176,3 +175,61 @@
     }
 
     console.log(1,2,3,4,5,5,);
+
+// array /string manipulation...
+
+// 1. word reverser algorithm
+    function wordRev(word){
+
+        const lowerTxt = word.toLowerCase();
+
+        const  reversedOrder = lowerTxt.split("").reverse().join("");
+        
+        return lowerTxt === reversedOrder;
+    };
+
+
+    console.log(wordRev("raceudar"));
+
+
+    // DUPLICATE FINDER
+    function duplicateRemover(arr){
+
+        const uniqueItems = [];
+
+        for(const item of arr){
+           if(!uniqueItems.includes(item)){
+            uniqueItems.push(item);
+           }
+        }
+
+        return uniqueItems;
+
+
+    }
+
+    console.log(duplicateRemover([1,2,3,4,5,6,4,3,2,2,1]));
+
+    // capital first Letter function 
+
+
+function titleCase(sentence){
+      
+    const words = sentence.split(" ");
+    const capWords = [];
+
+    for(const word of words){
+        if(word.length > 0){
+            const upperWord = word[0].toUpperCase() + word.slice(1);
+            capWords.push(upperWord);
+
+        }
+    }
+
+    return capWords.join(" ");
+}
+
+
+console.log(titleCase("hello world how are you"));
+
+
