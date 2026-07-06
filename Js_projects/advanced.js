@@ -42,3 +42,22 @@ const createLogger = (environment) =>{
 const logProductionError = createLogger("production");
 
 console.log(logProductionError("Database Connection Failed!!!"));
+
+
+// ID GENERTOR 
+
+function* IDGenerator(){
+
+    let id = 1;
+    while ( true){
+        yield  `user_count_${id++}`;
+    }
+}
+
+const idIterator = IDGenerator();
+
+
+console.log(idIterator.next().value);
+console.log(idIterator.next().value);
+console.log(idIterator.next().value);
+console.log(idIterator.next().value);
