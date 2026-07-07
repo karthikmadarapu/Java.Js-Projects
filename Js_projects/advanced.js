@@ -58,4 +58,21 @@ console.log(idIterator.next().value);
 console.log(idIterator.next().value);
 console.log(idIterator.next().value);
 console.log(idIterator.next().value);
- 
+
+// THE CUSTOM ARRAY CHUNKING LOOP
+
+function  chunkArray(array, size){
+
+    const finalChunk = [];
+
+    for(let i=0; i < array.length; i+= size){
+
+        const chunk = array.slice(i, i + size );
+        finalChunk.push(chunk);
+
+    }
+    return finalChunk;
+
+}
+
+console.log(chunkArray([1, 2, 3, 4, 5], 2)); 
