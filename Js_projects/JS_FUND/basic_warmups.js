@@ -268,4 +268,24 @@ function findTheShortest(sentence){
 
 console.log (findTheShortest("the to is pretty beautiful"));
 
+// SECURE COUNTER PROGRAM 
+function createSecureCounter(){
+    
+    let runningTotal = 0;
+
+    return function (numberToAdd){
+        
+        runningTotal +=  numberToAdd;
+        return runningTotal;
+    };
+
+}
+
+const myCounter = createSecureCounter();
+
+console.log(myCounter(6));
+console.log(myCounter(10));
+console.log(myCounter(15));
+
+
 
