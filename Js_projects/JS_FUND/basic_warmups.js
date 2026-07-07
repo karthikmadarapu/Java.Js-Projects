@@ -288,4 +288,24 @@ console.log(myCounter(10));
 console.log(myCounter(15));
 
 
+// TRUTHY OBJJECT EVALUATOR
+
+function truthyObjectEval(obj){
+    
+    const falsyKeys = [];
+
+    for( const key in obj ){
+        if(!obj[key]){
+            falsyKeys.push(key);
+        }
+    }
+
+    return falsyKeys;
+    
+}
+ const objectaaaa = { name: "Alex", score: 0, active: false, id: "" };
+console.log(truthyObjectEval(objectaaaa));
+
+
+
 
