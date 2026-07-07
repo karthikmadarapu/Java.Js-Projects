@@ -248,3 +248,24 @@ function sumArray(nums){
 console.log(sumArray([1,2,3,4,45,5,5,4,3,2,2]));
 
 
+
+// find The shortest word possible
+
+function findTheShortest(sentence){
+
+    const splitWord = sentence.split(" ");
+    let  shortestWord = splitWord[0];
+
+    for(const word of splitWord ){
+
+        if(word.length < shortestWord.length){
+            shortestWord = word;
+        }
+    }
+
+    return shortestWord;
+}
+
+console.log (findTheShortest("the to is pretty beautiful"));
+
+
