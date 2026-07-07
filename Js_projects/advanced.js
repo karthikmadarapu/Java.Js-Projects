@@ -25,9 +25,6 @@ console.log(myAcc.balance);
 
 
 
-
-
-
 // logger for errors
 
 const createLogger = (environment) =>{
@@ -61,3 +58,4 @@ console.log(idIterator.next().value);
 console.log(idIterator.next().value);
 console.log(idIterator.next().value);
 console.log(idIterator.next().value);
+ 

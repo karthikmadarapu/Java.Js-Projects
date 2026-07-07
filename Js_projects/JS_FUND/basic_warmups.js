@@ -232,4 +232,19 @@ function titleCase(sentence){
 
 console.log(titleCase("hello world how are you"));
 
+// array Element sum 
+
+function sumArray(nums){
+    
+    let total = 0;
+    for(const i of nums){
+        total += i;
+    }
+
+    return `Your total is : ${total}`;
+}
+
+
+console.log(sumArray([1,2,3,4,45,5,5,4,3,2,2]));
+
 
