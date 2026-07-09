@@ -76,3 +76,21 @@ function  chunkArray(array, size){
 }
 
 console.log(chunkArray([1, 2, 3, 4, 5], 2)); 
+
+// DUPLICATE REMOVER 
+function duplicateRmv(arr1, arr2){
+
+    const noDup = [];
+
+    for(const item of arr1){
+        if(arr2.includes(item) && !noDup.includes(item)){
+
+            noDup.push(item);
+        }
+    }
+
+    return noDup;
+
+};
+
+console.log(duplicateRmv([1,2,3,4,5,5,3,3,3,3], [3,2,3,4,5,2,2,4,3,3,]));
