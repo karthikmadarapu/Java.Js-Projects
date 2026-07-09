@@ -307,7 +307,21 @@ function truthyObjectEval(obj){
 console.log(truthyObjectEval(objectaaaa));
 
 
+// remove array duplicates
 
+function rmvdup(arr_arr){
+
+    const nums = [];
+    for(const i of arr_arr){
+        if(!nums.includes(i) ){
+            nums.push(i);
+        }
+    }
+    return nums;
+}
+
+const array = [1,2,2,4,5,3,3,5,3,2,2,3,3,2,4,5,5,5,6,6,4,4,4];
+console.log(rmvdup(array));
 
 
 
