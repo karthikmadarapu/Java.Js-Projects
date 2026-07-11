@@ -349,6 +349,20 @@ const nums =[1,33,5,3,5,22,56];
 console.log(findTheSecondLargest(nums));
 
 
+function numDupli(arrays){
+    const  nums4 = [];
+    for (const i of arrays){
+        if(!nums4.includes(i)){
+            nums4.push(i);
+        }
+    }
+    return nums4;
+}
+
+const numi = [1,23,4,4,4,3,2,22,23];
+
+console.log(numDupli(numi));
+
 
 
 
