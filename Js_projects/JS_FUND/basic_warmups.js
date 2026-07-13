@@ -402,6 +402,38 @@ function findTheMax(nums){
 console.log(findTheMax([1,44,5,2,99,100]));
 
 
+function filterThePos(numbers){
+
+    const posArr = [];
+    for(const num of numbers){
+        if(num >= 0){
+            posArr.push(num);
+        }
+    }
+    return posArr;
+}
+
+const mixNums = [-1,0,3,4,5,2,2,-4,5,-2,-78]
+
+console.log(filterThePos(mixNums));
+
+
+function findEveOdd(nums){
+    
+    const totalNum = parseInt(nums, 10);
+
+    if(totalNum % 2 === 0) return "Even";
+    else return "Odd";
+
+  
+}
+
+console.log(findEveOdd(8));
+
+
+
+
+
 
 
 
