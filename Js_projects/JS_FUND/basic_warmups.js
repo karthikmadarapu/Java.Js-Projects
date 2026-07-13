@@ -366,3 +366,27 @@ console.log(numDupli(numi));
 
 
 
+// Brain refresh problems 
+function summing(arrays_){
+
+    let totl = 0;
+    for(const number of arrays_){
+        totl += number;
+    }
+    return totl;
+
+}
+
+const myArr = [5,6,7,5,4,3,3,4,3,23,2,4,5,5,3,3];
+
+console.log(summing(myArr));
+
+
+// problem 2
+
+
+
+
+
+
+
