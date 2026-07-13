@@ -129,3 +129,25 @@ function arrChunk(arra, size){
 
 
 console.log(arrChunk([1,2,3,4,5,5],2));
+
+
+// number guesser  game range 1-50
+
+function guessTheNum(nums){
+
+    const strictNum = parseInt(nums, 10);
+
+    if(strictNum <= 24){
+        return "too low, guess a bit high";
+    }
+    else if(strictNum > 25){
+        return "umm a bit high!!, try low next.";
+
+    }
+   
+    if(strictNum === 25){
+        return "you are a hero!!! 25 guess num";
+    }
+}
+
+console.log(guessTheNum(1000));
