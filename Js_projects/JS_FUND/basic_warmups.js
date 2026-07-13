@@ -384,7 +384,22 @@ console.log(summing(myArr));
 
 // problem 2
 
+function findTheMax(nums){
+    
+    let  maxVar = -Infinity;
+    
+    for(const num of nums){
+        if(num > maxVar){
+            maxVar = num;
+        }
+    }
+    return maxVar;
 
+    
+}
+
+
+console.log(findTheMax([1,44,5,2,99,100]));
 
 
 
