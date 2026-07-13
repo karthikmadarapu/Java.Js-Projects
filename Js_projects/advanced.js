@@ -94,3 +94,21 @@ function duplicateRmv(arr1, arr2){
 };
 
 console.log(duplicateRmv([1,2,3,4,5,5,3,3,3,3], [3,2,3,4,5,2,2,4,3,3,]));
+
+
+// Array string reversal problems
+
+function revString(string){
+    
+    let finalString = "";
+
+    for(let  i = string.length-1; i >= 0; i--){
+         
+        finalString += string[i];
+    }
+
+    return finalString;
+
+}
+
+console.log(revString("hello"));
