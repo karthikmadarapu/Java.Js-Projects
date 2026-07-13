@@ -112,3 +112,20 @@ function revString(string){
 }
 
 console.log(revString("hello"));
+
+
+// array chunking loop
+function arrChunk(arra, size){
+
+   let finalOutput = [];
+   for(let i=0; i < arra.length; i += size){
+
+      const chunkz = arra.slice(i, i+size);
+     
+      finalOutput.push(chunkz);
+    }
+   return finalOutput;
+}
+
+
+console.log(arrChunk([1,2,3,4,5,5],2));
