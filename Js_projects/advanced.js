@@ -151,24 +151,24 @@ function guessTheNum(nums){
 }
 
 console.log(guessTheNum(1000));
-// // advanced optimal solution for duplicate checker 
+// advanced optimal solution for duplicate checker 
 
-// function dupRemoverOptimal(param){
+function dupRemoverOptimal(param){
 
-//     const seen = {};
-//     const result = [];
+    const seen = {};
+    const result = [];
 
-//     for(const item of param){
-//         if(!seen[item]){
-//             seen[item] = true;
-//             result.push(item);
-//         }
-//     }
+    for(const item of param){
+        if(!seen[item]){
+            seen[item] = true;
+            result.push(item);
+        }
+    }
 
-//     return result;
+    return result;
 
-// }
+}
 
-// const array = [1,2,2,2,3,2,1,1,3,3,1,1,3,3,12,1,2];
+const array = [1,2,2,2,3,2,1,1,3,3,1,1,3,3,12,1,2];
 
-// console.log(dupRemoverOptimal(array));
+console.log(dupRemoverOptimal(array));
