@@ -447,7 +447,35 @@ console.log(dupr([1,2,3,4,5,2,3,2,1]));
 
 
 
-// 
+// find the second largest number 
+function findThesec(nums){
+    
+    let  maxnum = -Infinity;
+    let secondMaxNum = -Infinity;
+
+
+    for( const num  of nums ){
+
+        if(num > maxnum){
+
+            secondMaxNum = maxnum;
+            maxnum = num;
+        }
+        else if(num > secondMaxNum && num !== maxnum){
+            secondMaxNum = num;
+        }
+
+
+    }
+    return secondMaxNum;
+
+
+
+}
+
+const mylalala = [1,33,88,55,69,77,33,234];
+
+console.log(findThesec(mylalala));
 
 
 
