@@ -430,9 +430,24 @@ function findEveOdd(nums){
 
 console.log(findEveOdd(8));
 
+// duplicate  remover
+
+function dupr(arr){
+    let parsedrr = [];
+
+    for(const i of arr){
+        if(!parsedrr.includes(i)){
+            parsedrr.push(i);
+        }
+    }
+    return parsedrr;
+}
+
+console.log(dupr([1,2,3,4,5,2,3,2,1]));
 
 
 
+// 
 
 
 
