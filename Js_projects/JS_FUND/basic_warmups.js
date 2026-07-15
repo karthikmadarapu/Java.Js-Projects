@@ -478,5 +478,31 @@ const mylalala = [1,33,88,55,69,77,33,234];
 console.log(findThesec(mylalala));
 
 
+// find the missing number from the sequence
+
+function missingNumFind(arr){
+
+    const minVal = arr[0];
+    const maxVal = arr[arr.length - 1];
 
 
+    let expectedSum = 0;
+    let actualSum = 0;
+
+//  this loop is to find the expected sum 
+    for(let i = minVal; i <= maxVal; i++){
+        expectedSum += i;
+    }
+
+    // this loop is for the actual arr 
+    for(const i of arr){
+        actualSum += i ;
+
+    }
+return expectedSum - actualSum;
+
+
+}
+const inputSequence =[1,2,3,4,5,6,7,9];
+
+console.log(missingNumFind(inputSequence));
