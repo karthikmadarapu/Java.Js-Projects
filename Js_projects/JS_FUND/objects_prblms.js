@@ -51,3 +51,20 @@ const  employees = [
 ];
 
 console.log(highestSalPerson(employees));
+
+
+function objectDiminisher(arr){
+
+    const resultObj = {};
+    for(const obj of arr){
+
+        for(const key  in obj){  
+            resultObj[key] = obj[key];
+        }
+    }
+
+    return resultObj;
+}
+const inputData = [{a:1}, {b:2}, {c:3}, {d:4}];
+
+console.log(objectDiminisher(inputData));
