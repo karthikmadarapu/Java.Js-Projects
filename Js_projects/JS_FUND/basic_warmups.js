@@ -617,11 +617,33 @@ function move0ToEnd(arr){
 
 
     }
-
-
     return result;
 }
 
 const inputArr = [0,1,2,4,5,33,0];
 
 console.log(move0ToEnd(inputArr));
+
+
+// move the zero 
+
+function hiToZero(param){
+    const resultArr = [];
+    let countZero = 0;
+
+    for(const i of param){
+        if(i !== 0){
+            resultArr.push(i);
+        }
+        else{
+            countZero++;
+        }
+    }
+    for(let i = 0; i < countZero; i++){
+        resultArr.push(0);
+    }
+    return resultArr;
+}
+const numArray = [1,2,3,40,0,4,0,5,0];
+
+console.log(hiToZero(numArray));
