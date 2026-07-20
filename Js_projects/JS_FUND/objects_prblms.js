@@ -68,3 +68,21 @@ function objectDiminisher(arr){
 const inputData = [{a:1}, {b:2}, {c:3}, {d:4}];
 
 console.log(objectDiminisher(inputData));
+
+
+//  how do we get the mini objects vanished 
+function objectRemover(array){
+
+    const finalObject = {};
+
+    for(const obj of array){
+        for(const key in obj){
+            finalObject[key] = obj[key];
+        }
+    }
+    return finalObject;
+
+}
+
+
+console.log(objectRemover(inputData));
