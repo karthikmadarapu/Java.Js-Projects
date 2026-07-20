@@ -647,3 +647,8 @@ function hiToZero(param){
 const numArray = [1,2,3,40,0,4,0,5,0];
 
 console.log(hiToZero(numArray));
+
+
+
+
+
