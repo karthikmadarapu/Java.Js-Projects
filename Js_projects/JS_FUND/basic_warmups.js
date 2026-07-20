@@ -545,3 +545,27 @@ function mySecondNum(arrayz){
 const myarrs = [1,2,3,4,55,6,66,7,7,6,65,5,44];
 
 console.log(mySecondNum(myarrs));
+
+// occurence counting program 
+
+function countOccurences(arr){
+
+    const countMap = {};
+    
+    for(const item of arr){
+        
+        if(countMap[item]){
+            countMap[item] += 1;
+        }
+        else{
+            countMap[item] = 1;
+        }
+
+    }
+
+    return countMap;
+}
+
+const myFruits = ["apple", "banana", "orange", "apple", "apple", "orange"];
+
+console.log(countOccurences(myFruits));
