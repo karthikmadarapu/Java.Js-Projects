@@ -523,3 +523,25 @@ function dupRem(arrays_arr){
 
 const avrs = [1,3,2,3,2,2,2,11,3,3,4,4,4,2];
 console.log(dupRem(avrs));
+// same shit 
+
+function mySecondNum(arrayz){
+    
+    let firstLargeNum = -Infinity;
+    let secondLargeNum  = -Infinity;
+
+    for(let num of arrayz){
+        if(num > firstLargeNum){
+            secondLargeNum  = firstLargeNum;
+            firstLargeNum = num;
+          
+        }
+        else if(num > secondLargeNum && num !== firstLargeNum){
+            secondLargeNum = num;
+        }
+    }
+    return secondLargeNum;
+}
+const myarrs = [1,2,3,4,55,6,66,7,7,6,65,5,44];
+
+console.log(mySecondNum(myarrs));
