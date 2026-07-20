@@ -28,3 +28,26 @@ const inputPeople = [
 ];
 
 console.log(groupingByAge(inputPeople));
+
+
+// find The person with highest salary
+ 
+function highestSalPerson(people){
+
+    let highestPaid = people[0];
+
+    for(const person of people){
+        if(person.salary > highestPaid.salary){
+            highestPaid = person;
+        }
+    }
+    return highestPaid;
+}
+
+const  employees = [
+ {name:"John", salary:5000},
+ {name:"Mike", salary:8000},
+ {name:"Anna", salary:6000}
+];
+
+console.log(highestSalPerson(employees));
