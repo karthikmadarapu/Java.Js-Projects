@@ -506,3 +506,20 @@ return expectedSum - actualSum;
 const inputSequence =[1,2,3,4,5,6,7,9];
 
 console.log(missingNumFind(inputSequence));
+
+
+
+//again the same question dup remover
+
+function dupRem(arrays_arr){
+    const finalResult = [];
+    for(const myI of arrays_arr){
+        if(!finalResult.includes(myI)){
+            finalResult.push(myI);
+        }
+    }
+    return finalResult;
+}
+
+const avrs = [1,3,2,3,2,2,2,11,3,3,4,4,4,2];
+console.log(dupRem(avrs));
