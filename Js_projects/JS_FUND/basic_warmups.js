@@ -569,3 +569,59 @@ function countOccurences(arr){
 const myFruits = ["apple", "banana", "orange", "apple", "apple", "orange"];
 
 console.log(countOccurences(myFruits));
+
+// finding th missing number 
+
+function findTheMissingNum(arr){
+
+    const minimum = arr[0];
+    const maximum = arr[arr.length - 1];
+
+    let expectedSum = 0;
+    let actualSum = 0;
+
+    for(let i = minimum; i <= maximum; i++){
+        expectedSum += i;
+    }
+
+    for(let i of arr){
+        actualSum += i;
+    }
+
+    return expectedSum - actualSum;
+
+
+}
+const myNum = [1,2,3,4,5,6,7,9];
+console.log(findTheMissingNum(myNum));
+
+
+// move zero to the end function 
+
+function move0ToEnd(arr){
+
+    const result = [];
+    let zeroCount = 0 ;
+
+    for(const i of arr){
+        if(i !== 0){
+            result.push(i);
+        }
+        else{
+            zeroCount++;
+        }
+    }
+
+    for(i = 0; i < zeroCount; i++){
+        result.push(0);
+
+
+    }
+
+
+    return result;
+}
+
+const inputArr = [0,1,2,4,5,33,0];
+
+console.log(move0ToEnd(inputArr));
