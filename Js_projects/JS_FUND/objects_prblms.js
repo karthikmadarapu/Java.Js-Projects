@@ -157,3 +157,27 @@ const word = "javascript";
 console.log(optLetterCounter(word));
 
 
+// find the most frequent number
+function findTheMostFrequent(numArray){
+    const counts = {};
+    let maxCount = 0;//This is for the value 
+    let champion = null ; // this is for the  key 
+
+
+
+    for(const num of numArray){
+        counts[num] = (counts[num] || 0) + 1;
+
+        if(counts[num] > maxCount){
+            maxCount = counts[num];
+            champion = num;
+        }
+    }
+    return Number(champion) ;
+    // return counts;
+}
+
+const numsArray = [1,2,2,2,3,3,3,3,4,4,4,4,4];
+console.log(findTheMostFrequent(numsArray));
+
+
