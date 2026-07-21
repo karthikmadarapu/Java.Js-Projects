@@ -172,3 +172,39 @@ function dupRemoverOptimal(param){
 const array = [1,2,2,2,3,2,1,1,3,3,1,1,3,3,12,1,2];
 
 console.log(dupRemoverOptimal(array));
+
+
+
+// TRAPPING RAIN WATER [LEETCODE HARD]
+
+function trapIt(array){
+
+
+     
+     let rightPointer = array.length - 1 , leftPointer = array[0];
+     let leftMax  = 0, rightMax  = 0, waterUnits = 0;
+     
+
+     while(leftPointer < rightPointer){
+
+        if(array[leftPointer] < array[rightPointer]){
+            array[leftPointer] >= leftMax ? (leftMax = array[leftPointer]) : (waterUnits += leftMax - array[leftPointer]);
+            leftPointer++ ;
+        }
+        else{
+            array[rightPointer] >= rightMax ? (rightMax = array[rightPointer]) : (waterUnits += rightMax - array[rightPointer]);
+            
+            rightPointer-- ;
+        
+        }
+
+     }
+     
+     return waterUnits;
+
+
+
+}
+
+const exArray = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
+console.log(trapIt(exArray));
