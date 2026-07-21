@@ -86,3 +86,27 @@ function objectRemover(array){
 
 
 console.log(objectRemover(inputData));
+
+// objects basic problems (mind grip)
+
+function counterObj(fruits){
+
+    const finalobject = {};
+
+    for(const fruit of fruits){
+
+        if(finalobject[fruit]){
+
+            finalobject[fruit] += 1;
+        }
+        else{
+            finalobject[fruit] = 1;
+        }
+        
+    }
+    return finalobject;
+}
+
+const fruits = ["apple","banana","apple","orange","banana","apple"];
+
+console.log(counterObj(fruits));
