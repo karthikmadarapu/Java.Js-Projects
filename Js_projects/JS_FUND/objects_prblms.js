@@ -177,7 +177,36 @@ function findTheMostFrequent(numArray){
     // return counts;
 }
 
-const numsArray = [1,2,2,2,3,3,3,3,4,4,4,4,4];
+const numsArray = [1,2,2,2,3,3,3,3,4,4,4,4];
 console.log(findTheMostFrequent(numsArray));
 
+
+// finding the max frequent num but with a twist 
+
+function findTheMostFrequent_Matching(numArray){
+    const counts = {};
+    let maxCount = 0;
+  
+    for(const num of numArray){
+        counts[num] = (counts[num] || 0) + 1;
+
+        if(counts[num] > maxCount){
+            maxCount = counts[num];
+          
+        }
+    }
+
+
+    const champion = [];
+    
+    for(const eachNum in counts){
+        if(counts[eachNum] === maxCount){
+            champion.push(Number(eachNum));
+        }
+    }
+    return  champion.length === 1 ? champion[0] : champion
+    // return counts;
+}
+
+console.log(findTheMostFrequent_Matching(numsArray));
 
