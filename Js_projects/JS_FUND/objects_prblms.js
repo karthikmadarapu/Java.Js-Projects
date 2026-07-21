@@ -211,5 +211,30 @@ function findTheMostFrequent_Matching(numArray){
 console.log(findTheMostFrequent_Matching(numsArray));
 
 
+// array to the object converter 
 
+function arrToObj(user){
+
+    const resultObj = {};
+
+    for(const info of user){
+
+        const key = info[0];
+        const val = info[1];
+
+        if(val !== null && val !== undefined){
+            resultObj[key] = val;
+        }
+    }
+    return resultObj;
+   
+   
+    }
+
+const myDetails = [
+ ["name","John"],
+ ["age",22],
+ ["city","Toronto"]
+];
+console.log(arrToObj(myDetails));
 
