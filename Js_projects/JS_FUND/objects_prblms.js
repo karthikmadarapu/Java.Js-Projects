@@ -110,3 +110,50 @@ function counterObj(fruits){
 const fruits = ["apple","banana","apple","orange","banana","apple"];
 
 console.log(counterObj(fruits));
+
+// each letter counter program 
+
+function letterCounter(word){
+    const finalRes = {};
+
+   const splitword =  word.split("");
+
+   for(const letter of splitword){
+           
+       if(finalRes[letter]){
+           finalRes[letter] += 1;
+       }
+       else{
+        finalRes[letter] = 1;
+       }
+   }
+   return finalRes;
+
+     
+
+}
+
+
+// optimal version 
+
+function optLetterCounter(word){
+    const finalRes = {};
+
+  
+
+   for(const letter of word){
+           
+       finalRes[letter] = (finalRes[letter] || 0) + 1;
+
+   }
+   return finalRes;
+
+     
+
+}
+
+const word = "javascript";
+
+console.log(optLetterCounter(word));
+
+
