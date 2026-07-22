@@ -260,3 +260,20 @@ function objectVanisher(array){
 
 console.log(objectVanisher(inputData));
 
+
+
+function arr2obj(details){
+   const  resultObj = {};
+   for(const infos of details){
+    const key = infos[0];
+    const val  = infos[1];
+    if(val !== null && val !== undefined){
+    resultObj[key] = val;
+    }
+
+   }
+   return resultObj;
+}
+
+console.log(arr2obj(myDetails));
+
