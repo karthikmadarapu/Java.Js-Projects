@@ -238,3 +238,25 @@ const myDetails = [
 ];
 console.log(arrToObj(myDetails));
 
+
+
+
+
+// object rehearsing 
+
+function objectVanisher(array){
+
+    const resultObj = {};
+
+    for(const sObj of array ){
+
+        for(const val in sObj){
+            resultObj[val] =sObj[val];
+        }
+    }
+
+    return resultObj;
+}
+
+console.log(objectVanisher(inputData));
+
