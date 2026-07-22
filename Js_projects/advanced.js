@@ -208,3 +208,33 @@ function trapIt(array){
 
 const exArray = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
 console.log(trapIt(exArray));
+
+
+
+
+
+// trapping the rain water again 
+function trapTheWater(array){
+
+    let left = array[0] , right = array.length -1;
+    let left_Max = 0, right_Max = 0, waterStored  = 0;
+
+    while(left < right){
+        if( array[left] < array[right]){
+        array[left] >= left_Max ? (left_Max = array[left]) : (waterStored += left_Max  - array[left]);
+        left++;
+        }
+
+        else{
+         array[right] >= right_Max ? (right_Max = array[right]) : (waterStored += right_Max  - array[right]);
+        right--;
+        }
+    }
+
+    return waterStored;
+
+
+
+}
+
+console.log(trapTheWater(exArray));
