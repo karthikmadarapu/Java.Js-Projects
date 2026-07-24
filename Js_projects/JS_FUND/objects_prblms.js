@@ -277,3 +277,18 @@ function arr2obj(details){
 
 console.log(arr2obj(myDetails));
 
+// fruits summing program
+
+function fruitSum(arrayFru){
+
+    const finalObj = {};
+
+    for(const eachFruit of arrayFru){
+
+        if(finalObj[eachFruit]) finalObj[eachFruit] += 1;
+        else finalObj[eachFruit] = 1;
+    }
+    return finalObj ;
+}
+
+console.log(fruitSum(fruits));
