@@ -314,3 +314,30 @@ function letterCounter(word){
 
 const exString = "javascript" ;
 console.log(letterCounter(exString));
+
+// find the most  frequent num
+
+function ablakadbra(array){
+    const result = {};
+
+    let max_count = 0;
+    let champion  = null;
+
+    for(const eachNum of array){
+        result[eachNum] = (result[eachNum] || 0) + 1;
+    
+     if(result[eachNum] > max_count){
+        max_count = result[eachNum];
+        champion = eachNum;
+     }
+    
+    }
+
+
+    
+     return Number(champion);
+
+
+}
+
+console.log(ablakadbra(numsArray));
