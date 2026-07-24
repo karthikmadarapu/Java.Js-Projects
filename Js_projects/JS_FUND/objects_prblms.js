@@ -292,3 +292,25 @@ function fruitSum(arrayFru){
 }
 
 console.log(fruitSum(fruits));
+
+
+// letter counter program 
+
+function letterCounter(word){
+    const finalRes = {};
+
+    const wordSplit = word.split("");
+
+    for(const eachLetter of wordSplit){
+
+        if(finalRes[eachLetter]) finalRes[eachLetter] += 1;
+        else finalRes[eachLetter] = 1;
+    }
+
+    return  finalRes;
+
+
+}
+
+const exString = "javascript" ;
+console.log(letterCounter(exString));
