@@ -311,3 +311,22 @@ calculate(5, 10, add);
 calculate(5, 10, subtract);
 calculate(15, 10, divide);
 calculate(5, 0, divide);
+
+
+callback functions rehearsing 
+
+
+const inventory = ["Apple", "Banana", "Orange"];
+const logItem = (item) => console.log(`Item found: ${item}`);
+
+function customForeach(array, eachItem){
+
+
+for(const each of array){
+    eachItem(each);
+}
+
+
+}
+
+customForeach(inventory, logItem);
