@@ -376,3 +376,6 @@ function assembleCar(model, paintCar, installEngine){
 assembleCar("Tesla",
 (model)=> console.log(`painting ${model} red`),
 () => console.log("engine installed successfully"));
+
+
+// challenge 3 
