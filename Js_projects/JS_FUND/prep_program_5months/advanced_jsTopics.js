@@ -313,7 +313,7 @@ calculate(15, 10, divide);
 calculate(5, 0, divide);
 
 
-callback functions rehearsing 
+// callback functions rehearsing 
 
 
 const inventory = ["Apple", "Banana", "Orange"];
