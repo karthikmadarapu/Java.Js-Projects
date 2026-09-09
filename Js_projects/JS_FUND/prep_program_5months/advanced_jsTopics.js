@@ -286,3 +286,28 @@ function userNotify (usermessage, alertCallback){
 userNotify("product shipped successfully", sendAsEmail);
 userNotify("product shipped successfully", sendAsSMS);
 
+
+// callback calculator 
+
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+const divide = (a, b) => {
+    if(b === 0) return "cannot be  divided by zero "
+     return    a / b;
+}
+
+function calculate(num1, num2, operationCallback){
+    console.log("... lets begin the calc...");
+
+    const finalRes = operationCallback(num1, num2);
+
+    return console.log(finalRes);
+
+}
+
+calculate(5, 10, multiply);
+calculate(5, 10, add);
+calculate(5, 10, subtract);
+calculate(15, 10, divide);
+calculate(5, 0, divide);
