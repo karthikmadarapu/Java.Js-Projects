@@ -271,4 +271,18 @@ checkSubscription
 
 
 
+//CALLBACK FUNCTIONS 
+
+const sendAsEmail = (message) => console.log(`📧 Sending Email: ${message}`);
+const sendAsSMS = (message) => console.log(`📱 Sending Text Message: ${message}`);
+
+
+function userNotify (usermessage, alertCallback){
+
+        console.log("Processing alert system files...");
+        alertCallback(usermessage);
+}
+
+userNotify("product shipped successfully", sendAsEmail);
+userNotify("product shipped successfully", sendAsSMS);
 
