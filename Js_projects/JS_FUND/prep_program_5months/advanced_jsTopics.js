@@ -330,3 +330,49 @@ for(const each of array){
 }
 
 customForeach(inventory, logItem);
+
+
+// Kitchen pizza callback timer 
+
+function cookPizza(pizzaType, onCompleteCallback){
+
+    console.log( "Cooking your pizza...");
+    setTimeout(()=>{
+
+        onCompleteCallback(`${pizzaType} Pizza is ready!`);
+       
+    }, 2000);
+}
+
+cookPizza("chicken", (message) =>{
+    console.log(message); 
+
+});
+
+// building a callback function for Automotive industry 
+
+// callback funtion for assembling car industry done 
+
+function assembleCar(model, paintCar, installEngine){
+
+    console.log(`Building frame for: [${model}]`);
+
+    setTimeout(() =>{
+     paintCar(model);
+
+     setTimeout(() =>{
+
+
+        installEngine();
+     },1000);
+    },1000);
+
+
+
+   
+}
+
+
+assembleCar("Tesla",
+(model)=> console.log(`painting ${model} red`),
+() => console.log("engine installed successfully"));
