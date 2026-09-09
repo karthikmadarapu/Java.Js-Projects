@@ -379,3 +379,26 @@ assembleCar("Tesla",
 
 
 // challenge 3 
+
+function filterMap(array, filterCallback, mapping){
+
+ const finalResult = [];
+    for(const i of array){
+    
+        if(filterCallback(i)){
+            const finalVal = mapping(i);
+
+            finalResult.push(finalVal);
+        }
+    }
+    return finalResult;
+}
+
+const arr = [1,2,3,4,5,6];
+
+
+const processedarr = filterMap(arr,
+       (num) => num % 2 === 0,
+       (num) => num * 2);
+
+       console.log(processedarr);
