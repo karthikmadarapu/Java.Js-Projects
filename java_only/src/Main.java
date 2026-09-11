@@ -26,6 +26,18 @@ public class Main {
 
 
 
+        int age = 70;
+        int countDown = 3;
+
+        while(age <= 80){
+            System.out.println(age);
+            age++;
+        }
+        while(countDown > 0){
+            System.out.println(countDown);
+            countDown--;
+        }
+        System.out.println("Happy New Year");
 
     }
 }
