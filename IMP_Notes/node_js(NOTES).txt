@@ -1,0 +1,43 @@
+<<<< INTRODUCTION TO NODE.JS >>>>
+Node.js ==== is an application where its(runtime environment).
+Also Node.js can be used to build backened services (API's).   
+(Web Apps and Mobile Apps both run via help of the backened services).
+
+There are multiple frameworks that can be used to run the backened, but why node?
+
+Node.js Benefits and pros
+-Great for prototyping and agile development.
+- It's superfast and highly scalable.
+
+Use of js is permanent in whole fullstack and MERN stack journey.
+
+
+==================== ARCHITECTURE OF NODE.JS ========================
+
+=> Every web browser has it's own engine to compile js code or Machine language and each brower has different types of their engines. for instance [chrome: v8 engine, edge: chakra and e.t.c] ;
+
+ => Ryan Dhal the founder and the CEO of the NODE.JS created,  embedding the web Browser engines inside the c++ and called it as Node.exe.
+=> his main idea was running the code or app / program outside the web browser.
+
+=> we have different objects that reads and does certain tasks, 
+fs.readFile()=== file systems, http.createServer() ==== to run the port number.
+
+<<<<<<<<<< How Does The Node Even Works. >>>>>>>>>>>>>>>>>
+
+Tip ==== Node is highly scalable because of it's non-blocking and asynchronous nature.
+
+<<<<<<<<<<< NODE MODULE SYSTEM >>>>>>>>>>>>>>>>>>>>
+
+ -There are builtin modules such as (os, fs, events, http)
+
+==> Global objects
+- console.log()
+- setTimeout()
+- clearTimeout()
+- setInterval()
+- clearInterval()
+
+-- window is a scope. if you have to access a global object you can access via window scope.
+
+
+<<<<<<<<<<<<<<< MODULES >>>>>>>>>>>>>>>>>>>>>>>>>>>
