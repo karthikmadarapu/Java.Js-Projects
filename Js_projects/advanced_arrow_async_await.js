@@ -111,6 +111,47 @@ console.log(productArr);
 
 
 
+// EXERCISE 6
+
+class Car {
+    constructor(model, year){
+        this.model = model;
+        this.year = year;
+    }
+
+
+    details(){
+
+        return ` MODEL: ${this.model} and ENGINE: ${this.year}`;
+    }
+}
+
+
+class Sedan extends Car{
+
+    constructor(model, year, balance){
+        
+        super(model, year);
+        this.balance = balance;
+    }
+
+    info(){
+        return `${this.model} has a balance of $${this.balance}`;
+    }
+    
+}
+
+
+
+
+const myCar = new Car("BMW M5 COMP", "2017");
+
+const myCar_inf = new Sedan("BMW M5 COMP", "2017", "30000");
+
+console.log(myCar.details());
+console.log(myCar_inf.info());
+
+
 
 
 
