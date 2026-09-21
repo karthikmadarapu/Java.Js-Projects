@@ -30,3 +30,20 @@ async function threesecondBeeper(){
 
 threesecondBeeper();
 
+
+
+
+//LAB 2 QUESTIONS 
+ 
+const gretter = ((myarr) =>{
+
+    for(const index of myarr) console.log(`Hello ${index}`);
+
+});
+
+const names = ['peter', 'rebbeca', 'mark', 'mike'];
+gretter(names);
+
+
+
+

@@ -1,0 +1,9 @@
+- Node package Manager(NPM).
+- Asynchronous js. (inc callbacks , promises, async and await )
+- CRUD operations 
+- data validation 
+- authotization and authentication 
+- Handling and logging in errors 
+- Unit and Intergration testing 
+- Test
+- Deployment to the cloud.

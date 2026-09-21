@@ -41,3 +41,56 @@ Tip ==== Node is highly scalable because of it's non-blocking and asynchronous n
 
 
 <<<<<<<<<<<<<<< MODULES >>>>>>>>>>>>>>>>>>>>>>>>>>>
+- every js application has it's main module, which acts as a main module.
+
+---------------------------- How do you create a module ?---------------
+- we do use the module.exports.xxx =  url / log // any thing that u export.
+
+
+----------------------------How do you load a module? _----------------
+- we use require function and put the file location where is it located in.
+- we can also log it using .log() function like console.log() function.
+
+step 1 - to export the module you use the export function 
+step 2 - to load the module in another function we use the require function to get that exact function. 
+
+--------------- Module wrapper function --------------------
+- it's totally a backend that we dont use in day to day operations and , it runs and does certain  tasks under the hood and. we don't have to bother about it much. 
+
+-------------path module ----------------
+-path.parse()
+- how do we use it ====  const path = require('path');
+- path  outputs all the information about the current main module app. 
+- it outputs in json. 
+
+
+
+------------- The OS module ------------------
+-the os module is always there with the node js and , we can use it by 
+
+ex: const os  = require('os');
+
+var totalMemory =  os.totalmem();
+var freeMemory =  os.freemem();
+
+console.log(`The total memory is : ${totalMemory}`);
+
+console.log(`The free memory is : ${freeMemory}`);
+
+
+- this is how we used to get the data / memory info in our computer.
+
+
+
+----------------- File System module ---------
+- fs module , has many modules in it and  it has both async and sync funcs , that we can use to display  many functions 
+
+we just const fs = require('fs');
+fs.func('./', function(err, files){
+    if(err) console.log('Error: ', err);
+    else console.log('success', files);
+});
+
+
+---------------- Event modules ---------------
+EVENT =  a signal that something has happened.
