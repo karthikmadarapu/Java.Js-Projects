@@ -66,3 +66,51 @@ gretter(names);
 const games = ['cod', 'minecraft', 'valo', 'dota'];
 
 console.log(capitalize(games));
+
+
+//EXERCISE 3
+
+const colors = ['red', 'green', 'blue'];
+
+const capitalizedColors = colors.map((each) =>{
+    return each.charAt(0).toUpperCase() + each.slice(1);
+});
+
+console.log(capitalizedColors);
+
+
+// EXERCISE 4
+
+const values = [1, 60, 34, 30, 79, 5];
+
+const filteredValues = values.filter((eachVal) => eachVal < 20);
+
+console.log(filteredValues);
+
+
+
+//EXERCISE 5
+const numsArray = [1, 2, 3, 4];
+
+const calculateSum = numsArray.reduce((acc, curr) =>{
+
+    return acc + curr;
+
+}, 0)
+
+
+
+
+const productArr = numsArray.reduce((acc, curr) =>{
+
+    return acc * curr;
+}, 1);
+
+console.log(calculateSum);
+console.log(productArr);
+
+
+
+
+
+
