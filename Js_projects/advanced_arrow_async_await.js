@@ -46,4 +46,23 @@ gretter(names);
 
 
 
+//EXERCISE 2  
 
+ function capitalize(arr){
+
+    
+
+
+    const capitalizePhrases = arr.map( (eWord) =>{
+        
+        return eWord.charAt(0).toUpperCase() + eWord.slice(1)
+
+         });
+
+    return capitalizePhrases;
+
+    } 
+
+const games = ['cod', 'minecraft', 'valo', 'dota'];
+
+console.log(capitalize(games));
